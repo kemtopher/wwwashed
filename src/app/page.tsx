@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { createClient } from '../prismicio';
 import { Feed } from '../components/Feed/Feed';
 
@@ -6,14 +7,20 @@ export default async function Home() {
   const allPosts = await client.getAllByType('post');
 
   return (
-    <main className="site-main">
-      <div className="site-grid container-safe">
-        <aside></aside>
+    <>
+      <header className="py-4 px-4 w-full h-auto bg-white fixed top-0 left-0">
+        <Image src='/wwwashed.png' alt="logo for wwwashed" width="673" height="140" className="max-w-[450px]" />
+      </header>
 
-        <Feed posts={allPosts} />
+      <main className="site-main pt-[200px]">
+        <div className="site-grid container-safe">
+          <aside></aside>
 
-        <aside></aside>
-      </div>
-    </main>
+          <Feed posts={allPosts} />
+
+          <aside></aside>
+        </div>
+      </main>
+    </>
   );
 }
