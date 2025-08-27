@@ -8,13 +8,12 @@ import type { RichTextField } from '@prismicio/client';
 
 interface PostProps {
   author?: string;
-  timestamp: Date;
+  timestamp: Date | string;
   content: RichTextField;
   title: RichTextField;
 }
 
 export const Post = ({ author, timestamp, content, title }: PostProps) => {
-  const date = new Date(timestamp);
   // const month = date.toLocaleString('en-US', { month: 'short' });
   // const day = String(date.getDate()).padStart(2, '0');
   // const year = date.getFullYear();
