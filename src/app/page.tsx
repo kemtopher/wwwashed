@@ -1,21 +1,17 @@
 import Image from 'next/image';
 import { createClient } from '../prismicio';
-import { Feed } from "../components/Feed/Feed"
+import { Feed } from '../components/Feed/Feed';
 
 export default async function Home() {
   const client = createClient();
   const allPosts = await client.getAllByType('post');
-
-  console.log("Home: ", allPosts);
 
   return (
     <main className="site-main">
       <div className="site-grid container-safe">
         <aside></aside>
 
-        <Feed 
-          posts={ allPosts }
-        />
+        <Feed posts={allPosts} />
 
         <aside></aside>
       </div>

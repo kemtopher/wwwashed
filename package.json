@@ -18,15 +18,12 @@
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
     "@slicemachine/adapter-next": "^0.3.83",
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.5.1",
     "prettier": "^3.6.2",
     "slice-machine-ui": "^2.18.1",
     "tailwindcss": "^4.1.12",
