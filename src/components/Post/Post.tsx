@@ -46,8 +46,8 @@ export const Post = ({ author, timestamp, content, title }: PostProps) => {
   };
 
   return (
-    <article className={`post-body w-full p-4 md:p-6`}>
-      <header className="post-header mb-4 flex flex-col gap-3">
+    <article className={`post-body w-full`}>
+      <header className="post-header mb-4 flex flex-col">
         {/* <div className="post-title">{ title }</div> */}
         <PrismicRichText
           field={title}

@@ -12,7 +12,7 @@ xl: '1280px',
   --background: #ffffff;
   --foreground: #171717;
 
-  --font-main: 'Karla', Helvetica, Arial, sans-serif;
+  --font-main: Georgia;
 }
 
 @theme inline {
@@ -48,3 +48,24 @@ body {
 html, body {
   display: block;
 } */
+
+.site-main {
+  width: 100%;
+  max-width: 666px;
+}
+
+.sit3-grid {
+  display: flex;
+  gap: 2rem;
+}
+
+.font {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header, h3 {
+  margin: 0;
+}

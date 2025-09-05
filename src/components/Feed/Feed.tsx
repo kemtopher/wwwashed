@@ -9,7 +9,7 @@ interface FeedProps {
 
 export const Feed = ({ posts }: FeedProps) => {
   return (
-    <section className="mx-auto max-w-2xl flex flex-col gap-6">
+    <section className="mt-32 flex flex-col gap-6">
       {posts.map((post) => (
         <Post
           key={post.id}
