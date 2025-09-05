@@ -53,7 +53,7 @@ export const Post = ({ author, timestamp, content, title }: PostProps) => {
           field={title}
           components={{
             heading3: ({ children }) => (
-              <h3 className="mb-4 text-3xl font-bold">{children}</h3>
+              <h3 className="mb-4 text-sm leading-tight text-black/60">{children}</h3>
             ),
           }}
         />
@@ -83,7 +83,7 @@ export const Post = ({ author, timestamp, content, title }: PostProps) => {
               <h2 className="mb-3 text-2xl font-semibold">{children}</h2>
             ),
             paragraph: ({ children }) => (
-              <p className="mb-4 text-base md:text-xl lg:text-md">{children}</p>
+              <p className="mb-4 text-sm leading-tight text-black/60">{children}</p>
             ),
             listItem: ({ children }) => <li className="mb-2">{children}</li>,
             embed: ({ node }) => {
