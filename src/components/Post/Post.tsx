@@ -4,20 +4,17 @@ import {
   PrismicRichText,
   PrismicLink,
 } from '@prismicio/react';
-import type { RichTextField } from '@prismicio/client';
+import type { ImageField, RichTextField } from '@prismicio/client';
 
 interface PostProps {
   author?: string;
   timestamp: Date | string;
   content: RichTextField;
   title: RichTextField;
+  image: ImageField
 }
 
 export const Post = ({ author, timestamp, content, title }: PostProps) => {
-  // const month = date.toLocaleString('en-US', { month: 'short' });
-  // const day = String(date.getDate()).padStart(2, '0');
-  // const year = date.getFullYear();
-
   const components: JSXMapSerializer = {
     image: ({ node }) => (
       <figure className="my-4">
