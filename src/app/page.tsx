@@ -9,8 +9,8 @@ export default async function Home() {
   return (
     <>
     <div className="sit3-grid">
-      <div className="py-4 px-4">
-        <Image src='/wwwashed-logo.png' alt="logo for wwwashed" width="150" height="210" className="max-w-[150px] h-auto w-full" />
+      <div className="py-4 min-w-[150px]">
+        <Image src='/wwwashed-logo.png' alt="logo for wwwashed" width="300" height="420" className="max-w-[250px] h-auto w-full" />
       </div>
 
       <main className="site-main py-4 px-4">
