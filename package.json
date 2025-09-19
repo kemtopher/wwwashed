@@ -10,11 +10,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@next/third-parties": "^15.5.3",
     "@prismicio/client": "^7.17.3",
     "@prismicio/next": "^2.0.1",
     "@prismicio/react": "^3.2.1",
     "next": "15.5.1",
-    "nextjs-google-analytics": "^2.3.7",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },

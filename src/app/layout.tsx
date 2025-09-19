@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { GoogleAnalytics } from "nextjs-google-analytics";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -25,12 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics gaId="G-EY99K5RG7R" />
       <body className={`w-full antialiased site-body`}>
         <header className="site-header container-safe">
           {/* <!-- your nav / logo --> */}
         </header>
         {children}
-        <GoogleAnalytics trackPageViews />
       </body>
     </html>
   );

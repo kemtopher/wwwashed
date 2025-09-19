@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import { createClient } from '../prismicio';
 import { Feed } from '../components/Feed/Feed';
 
