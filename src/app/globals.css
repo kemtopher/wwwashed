@@ -136,7 +136,8 @@ body {
 
 .sit3-grid {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .sit3-grid .nav-column {
@@ -146,8 +147,12 @@ body {
 }
 
 .site-main {
-  width: 60%;
+  width: 100%;
   /* flex-shrink: 2; */
+}
+
+.nav-column {
+  max-width: 30%;
 }
 
 .font {
@@ -163,12 +168,26 @@ header, h3 {
   margin: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .sit3-grid {
-    gap: 10vw;
+    gap: 1rem;
   }
 
   .font {
    font-size: 40px;
+  }
+
+  .nav-column {
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .font {
+    font-size: 5rem;
+  }
+
+  .site-main {
+    max-width: 65%;
   }
 }
