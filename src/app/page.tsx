@@ -10,7 +10,7 @@ export default async function Home() {
     <>
     <div className="sit3-grid">
       <div className="py-4 px-4">
-        <Image src='/wwwashed-logo.png' alt="logo for wwwashed" width="673" height="170" className="max-w-[150px] h-[170px]" />
+        <Image src='/wwwashed-logo.png' alt="logo for wwwashed" width="673" height="170" className="max-w-[150px] h-auto w-full" />
       </div>
 
       <main className="site-main py-4 px-4">
