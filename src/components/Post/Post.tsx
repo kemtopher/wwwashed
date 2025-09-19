@@ -17,7 +17,7 @@ interface PostProps {
 export const Post = ({ author, timestamp, content, title }: PostProps) => {
   const components: JSXMapSerializer = {
     image: ({ node }) => (
-      <figure className="my-4">
+      <div className="my-4">
         <img
           src={node.url}
           alt={node.alt || ''}
@@ -25,17 +25,17 @@ export const Post = ({ author, timestamp, content, title }: PostProps) => {
           loading="lazy"
         />
         {node.alt ? (
-          <figcaption className="mt-2 text-sm text-black/60">
+          <div className="mt-2 text-sm text-black/60">
             {node.alt}
-          </figcaption>
+          </div>
         ) : null}
-      </figure>
+      </div>
     ),
     // Responsive video/oEmbed
     embed: ({ node }) => (
       <div className="not-prose my-4 aspect-video">
         <div
-          className="h-full w-full [&>iframe]:h-full [&>iframe]:w-full [&>iframe]:rounded-xl [&>iframe]:border-0"
+          className="h-full w-full [&>iframe]:h-full [&>iframe]:w-full [&>iframe]:border-0"
           dangerouslySetInnerHTML={{ __html: node.oembed?.html || '' }}
         />
       </div>

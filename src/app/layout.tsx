@@ -26,10 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics gaId="G-EY99K5RG7R" />
-      <body className={`w-full antialiased site-body`}>
-        <header className="site-header container-safe">
-          {/* <!-- your nav / logo --> */}
-        </header>
+      <body>
         {children}
       </body>
     </html>
