@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import { createClient } from '../prismicio';
 import { Feed } from '../components/Feed/Feed';
 
@@ -8,7 +9,6 @@ export default async function Home() {
 
   return (
     <>
-
     <div className="sit3-grid">
       <div className="py-4 px-4">
         <Image src='/wwwashed-logo.png' alt="logo for wwwashed" width="673" height="170" className="max-w-[150px] h-[170px]" />

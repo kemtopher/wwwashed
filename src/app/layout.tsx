@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
+import { GoogleAnalytics } from "nextjs-google-analytics";
 import { Geist, Geist_Mono } from 'next/font/google';
-import { Analytics } from "@vercel/analytics/next"
 import './globals.css';
 
 const geistSans = Geist({
@@ -30,7 +30,7 @@ export default function RootLayout({
           {/* <!-- your nav / logo --> */}
         </header>
         {children}
-        <Analytics />
+        <GoogleAnalytics trackPageViews />
       </body>
     </html>
   );
