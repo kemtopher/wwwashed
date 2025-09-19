@@ -140,23 +140,35 @@ body {
 }
 
 .sit3-grid .nav-column {
-  flex-basis: 35%;
-  max-width: 150px;
-  flex-grow: 1;
+  /* flex-basis: 35%;
+  max-width: 150px; */
+  /* flex-grow: 1; */
 }
 
 .site-main {
-  flex-basis: 65%;
-  flex-shrink: 2;
+  width: 60%;
+  /* flex-shrink: 2; */
 }
 
 .font {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 400;
   line-height: normal;
 }
 
+
+
 header, h3 {
   margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .sit3-grid {
+    gap: 10vw;
+  }
+
+  .font {
+   font-size: 40px;
+  }
 }
